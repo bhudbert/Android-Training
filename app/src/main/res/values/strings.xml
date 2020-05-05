@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AppDeBruno </string>
+
+    <string name="title_name">Nom : </string>
+    <string name="title_firstname">Prénom : </string>
+    <string name="title_username">Pseudo : </string>
+    <string name="title_password">Mot de passe : </string>
+</resources>
