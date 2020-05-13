@@ -13,145 +13,181 @@
         android:layout_height="58dp"
         android:fontFamily="sans-serif"
         android:text="Bienvenue!"
-        android:textSize="40dp"
+        android:textAlignment="center"
+        android:textSize="35dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023" />
+        app:layout_constraintVertical_bias="0.008" />
 
     <TextView
-
         android:id="@+id/subtitle"
-        android:layout_width="218dp"
-        android:layout_height="40dp"
+        android:layout_width="213dp"
+        android:layout_height="37dp"
         android:fontFamily="sans-serif"
         android:text="choisissez un theme"
         android:textAlignment="center"
         android:textSize="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintBottom_toTopOf="@+id/layouts"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.121" />
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:layout_constraintVertical_bias="0.2"/>
 
     <Button
-
         android:id="@+id/layouts"
         android:layout_width="280dp"
-        android:layout_height="38dp"
-        android:text="Les layouts"
+        android:layout_height="35dp"
+        android:text="Les Layouts"
+        android:textSize="12dp"
+        android:textAllCaps="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.199"
+        app:layout_constraintVertical_bias="0.2"
         android:onClick="onClickShowLayouts"/>
 
     <Button
         android:id="@+id/interractions"
         android:layout_width="280dp"
-        android:layout_height="38dp"
+        android:layout_height="35dp"
         android:text="Les interactions"
+        android:textAllCaps="false"
+        android:textSize="12dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/layouts"
-        app:layout_constraintVertical_bias="0.025" />
+        app:layout_constraintVertical_bias="0.02"
+        android:onClick="onClickShowInteractions"/>
 
     <Button
         android:id="@+id/interractionsComponents"
         android:layout_width="280dp"
-        android:layout_height="38dp"
+        android:layout_height="35dp"
         android:text="Les composants d'interraction"
+        android:textAllCaps="false"
+        android:textSize="12dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/interractions"
-        app:layout_constraintVertical_bias="0.025" />
+        app:layout_constraintVertical_bias="0.02"
+        android:onClick="onClickShowInterractionsComponents"/>
 
     <Button
         android:id="@+id/persistance"
         android:layout_width="280dp"
-        android:layout_height="38dp"
+        android:layout_height="35dp"
         android:text="La persistance"
+        android:textSize="12dp"
+        android:textAllCaps="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/interractionsComponents"
-        app:layout_constraintVertical_bias="0.025" />
+        app:layout_constraintVertical_bias="0.02"
+        android:onClick="onClickShowPersistence"/>
 
     <Button
-
         android:id="@+id/async"
         android:layout_width="280dp"
-        android:layout_height="38dp"
+        android:layout_height="35dp"
         android:text="Taches Asynchrones"
+        android:textSize="12dp"
+        android:textAllCaps="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/persistance"
-        app:layout_constraintVertical_bias="0.025" />
+        app:layout_constraintVertical_bias="0.02"
+        android:onClick="onClickShowAsyncTasks"/>
 
     <Button
-
-        android:id="@+id/web"
+        android:id="@+id/webservices"
         android:layout_width="280dp"
-        android:layout_height="38dp"
+        android:layout_height="35dp"
         android:text="Services Web"
+        android:textSize="12dp"
+        android:textAllCaps="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/async"
-        app:layout_constraintVertical_bias="0.025" />
+        app:layout_constraintVertical_bias="0.02"
+        android:onClick="onClickShowWebServicess"/>
 
 
     <Button
-
         android:id="@+id/broadcast"
         android:layout_width="280dp"
-        android:layout_height="38dp"
+        android:layout_height="35dp"
         android:text="Services Broadcast"
+        android:textSize="12dp"
+        android:textAllCaps="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/web"
-        app:layout_constraintVertical_bias="0.034" />
+        app:layout_constraintTop_toBottomOf="@+id/webservices"
+        app:layout_constraintVertical_bias="0.02"
+        android:onClick="onClickShowBroadcastServices"/>
 
     <Button
 
         android:id="@+id/room"
         android:layout_width="280dp"
-        android:layout_height="38dp"
+        android:layout_height="35dp"
         android:text="Room"
+        android:textSize="12dp"
+        android:textAllCaps="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/broadcast"
-        app:layout_constraintVertical_bias="0.046" />
+        app:layout_constraintVertical_bias="0.02"
+        android:onClick="onClickShowRoom"/>
 
     <Button
 
         android:id="@+id/webviews"
         android:layout_width="280dp"
-        android:layout_height="38dp"
+        android:layout_height="35dp"
         android:text="Les WebVews"
+        android:textSize="12dp"
+        android:textAllCaps="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/room"
-        app:layout_constraintVertical_bias="0.064" />
+        app:layout_constraintVertical_bias="0.02"
+        android:onClick="onClickShowWebViews"/>
 
+    <Button
+
+        android:id="@+id/geolocalisation"
+        android:layout_width="280dp"
+        android:layout_height="35dp"
+        android:text="La geolocalisation"
+        android:textAllCaps="false"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/webviews"
+        app:layout_constraintVertical_bias="0.02"
+        android:onClick="onClickShowGeolocalisation"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

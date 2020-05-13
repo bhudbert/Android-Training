@@ -9,7 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".persistence.MainActivitPersistence"></activity>
+        <activity android:name=".interactions.MainActivityInteractions"></activity>
+        <activity android:name=".geolocalisation.MainActivityGeolocalisation" />
+        <activity android:name=".webviews.MainActivityWebViews" />
+        <activity android:name=".room.MainActivityRoom" />
+        <activity android:name=".broadcastservices.MainActivityBroadcastServices" />
+        <activity android:name=".webservices.MainActivityWebServices" />
+        <activity android:name=".asynchronestasks.MainActivityAsynchroneTask" />
+        <activity android:name=".interactionscomponets.MainActivityInteractionComponents" />
+        <activity android:name=".persistence.MainActivityPersistence" />
         <activity android:name=".layouts.MainActivityLayouts" />
         <activity android:name=".layouts.ActivityWithMixedLayouts" />
         <activity
