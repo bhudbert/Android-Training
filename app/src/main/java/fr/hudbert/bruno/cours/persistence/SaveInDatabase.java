@@ -1,4 +1,4 @@
-package fr.hudbert.bruno.cours.persistance;
+package fr.hudbert.bruno.cours.persistence;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,8 +6,8 @@ import android.os.Bundle;
 import android.widget.Toast;
 
 import fr.hudbert.bruno.cours.R;
-import fr.hudbert.bruno.cours.persistance.bo.User;
-import fr.hudbert.bruno.cours.persistance.dao.UserDao;
+import fr.hudbert.bruno.cours.persistence.bo.User;
+import fr.hudbert.bruno.cours.persistence.dao.UserDao;
 
 public class SaveInDatabase extends AppCompatActivity {
 
@@ -21,15 +21,11 @@ public class SaveInDatabase extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
 
-        User bh = new User();
-        bh.setFirstname("Bruno");
-        bh.setName("HUDBERT");
-
-
         UserDao ud = new UserDao(this);
-        long id = ud.insert(bh);
 
-        Toast.makeText(this,"ID =" + id,Toast.LENGTH_SHORT).show();
+        User user = ud.get(3);
+
+        Toast.makeText(this,"Resultat => ID : " + user,Toast.LENGTH_SHORT).show();
 
         }
 

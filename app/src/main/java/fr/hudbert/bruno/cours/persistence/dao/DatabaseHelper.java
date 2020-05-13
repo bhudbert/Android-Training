@@ -1,12 +1,10 @@
-package fr.hudbert.bruno.cours.persistance.dao;
+package fr.hudbert.bruno.cours.persistence.dao;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-import androidx.annotation.Nullable;
-
-import fr.hudbert.bruno.cours.persistance.contracts.UserContract;
+import fr.hudbert.bruno.cours.persistence.contracts.UserContract;
 
 public class DatabaseHelper extends SQLiteOpenHelper {
 

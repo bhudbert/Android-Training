@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">AppDeBruno </string>
+    <string name="app_name">Demo De Bruno </string>
 
     <string name="title_name">Nom : </string>
     <string name="title_firstname">Prénom : </string>

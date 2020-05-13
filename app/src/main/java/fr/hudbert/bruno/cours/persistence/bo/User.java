@@ -1,4 +1,4 @@
-package fr.hudbert.bruno.cours.persistance.bo;
+package fr.hudbert.bruno.cours.persistence.bo;
 
 public class User {
 
@@ -45,6 +45,15 @@ public class User {
         this.firstname = firstname;
     }
 
+    public String toString(){
+        StringBuilder userToString = new StringBuilder();
+        userToString.append(this.id);
+        userToString.append(" => ");
+        userToString.append(this.firstname);
+        userToString.append(" ");
+        userToString.append(this.name.toUpperCase());
 
+     return userToString.toString();
+    }
 
 }

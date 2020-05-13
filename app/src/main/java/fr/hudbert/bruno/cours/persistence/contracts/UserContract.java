@@ -1,4 +1,4 @@
-package fr.hudbert.bruno.cours.persistance.contracts;
+package fr.hudbert.bruno.cours.persistence.contracts;
 
 public class UserContract {
 

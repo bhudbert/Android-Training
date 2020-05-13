@@ -1,4 +1,4 @@
-package fr.hudbert.bruno.cours.persistance;
+package fr.hudbert.bruno.cours.persistence;
 
 import androidx.appcompat.app.AppCompatActivity;
 
