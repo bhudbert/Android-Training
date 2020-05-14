@@ -11,6 +11,6 @@ public class MainActivityAsynchroneTask extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_asynchrone_task);
+        setContentView(R.layout.activity_asynchrone_task_main);
     }
 }

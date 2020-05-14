@@ -9,8 +9,8 @@
 
     <TextView
         android:id="@+id/title"
-        android:layout_width="214dp"
-        android:layout_height="58dp"
+        android:layout_width="213dp"
+        android:layout_height="43dp"
         android:fontFamily="sans-serif"
         android:text="Bienvenue!"
         android:textAlignment="center"

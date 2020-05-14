@@ -21,7 +21,7 @@ public class SaveInFile extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_save_in_file);
+        setContentView(R.layout.activity_persistence_save_in_file);
     }
 
     public void onClickSave(View view) {

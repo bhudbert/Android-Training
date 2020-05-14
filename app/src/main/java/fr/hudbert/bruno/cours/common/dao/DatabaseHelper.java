@@ -1,4 +1,4 @@
-package fr.hudbert.bruno.cours.persistence.dao;
+package fr.hudbert.bruno.cours.common.dao;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;

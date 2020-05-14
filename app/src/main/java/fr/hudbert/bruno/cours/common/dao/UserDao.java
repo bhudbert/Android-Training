@@ -1,11 +1,11 @@
-package fr.hudbert.bruno.cours.persistence.dao;
+package fr.hudbert.bruno.cours.common.dao;
 
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
-import fr.hudbert.bruno.cours.persistence.bo.User;
+import fr.hudbert.bruno.cours.common.bo.User;
 import fr.hudbert.bruno.cours.persistence.contracts.UserContract;
 
 public class UserDao {

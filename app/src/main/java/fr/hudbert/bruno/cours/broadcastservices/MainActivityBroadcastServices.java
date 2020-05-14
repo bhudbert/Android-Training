@@ -11,6 +11,6 @@ public class MainActivityBroadcastServices extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_broadcast_services);
+        setContentView(R.layout.activity_broadcast_services_main);
     }
 }

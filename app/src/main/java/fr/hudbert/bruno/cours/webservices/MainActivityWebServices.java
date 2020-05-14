@@ -11,6 +11,6 @@ public class MainActivityWebServices extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_web_services);
+        setContentView(R.layout.activity_web_services_main);
     }
 }

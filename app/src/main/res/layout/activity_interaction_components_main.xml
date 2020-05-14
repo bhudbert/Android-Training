@@ -4,17 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".layouts.MainActivityLayouts">
-
-
-
+    tools:context=".interactioncomponents.MainActivityInteractionComponents">
     <TextView
         android:id="@+id/title"
         android:layout_width="match_parent"
         android:layout_height="45dp"
         android:background="@color/colorSecondary"
         android:fontFamily="sans-serif"
-        android:text="Layouts"
+        android:text="Les composants d'interactions"
         android:textAlignment="center"
         android:gravity="center"
         android:textColor="#ffffff"
@@ -27,75 +24,90 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-       android:id="@+id/subtitle"
+
+        android:id="@+id/subtitle"
         android:layout_width="313dp"
         android:layout_height="28dp"
         android:fontFamily="sans-serif"
-        android:text="choisissez un type de layouts"
+        android:text="Choisissez une démo"
         android:textAlignment="center"
         android:textSize="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.153" />
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:layout_constraintVertical_bias="0.08" />
 
     <Button
-        android:id="@+id/relativelayouts"
+        android:id="@+id/liste"
         android:layout_width="280dp"
         android:layout_height="35dp"
-        android:text="RelativeLayout"
-        android:textSize="12dp"
+        android:onClick="onClickShowList"
+        android:text="Une liste"
         android:textAllCaps="false"
+        android:textSize="12dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.3" />
-
+        app:layout_constraintTop_toBottomOf="@+id/subtitle"
+        app:layout_constraintVertical_bias="0.053" />
     <Button
-        android:id="@+id/gridlayouts"
+        android:id="@+id/recyclerview"
         android:layout_width="280dp"
         android:layout_height="35dp"
-        android:text="GridLayout"
-        android:textSize="12dp"
+        android:onClick="onClickShowRecyclerViews"
+        android:text="Un Recycler View"
         android:textAllCaps="false"
+        android:textSize="12dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/relativelayouts"
-        app:layout_constraintVertical_bias="0.08"
-        app:layout_constraintVertical_chainStyle="packed" />
-
+        app:layout_constraintTop_toBottomOf="@+id/liste"
+        app:layout_constraintVertical_bias="0.053" />
     <Button
-        android:id="@+id/linearlayout"
+        android:id="@+id/cardview"
         android:layout_width="280dp"
         android:layout_height="35dp"
-        android:layout_marginBottom="124dp"
-        android:text="LinearLayout"
-        android:textSize="12dp"
+        android:onClick="onClickShowCardView"
+        android:text="Les CardViews"
         android:textAllCaps="false"
+        android:textSize="12dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/gridlayouts"
-        app:layout_constraintVertical_bias="0.135" />
-
+        app:layout_constraintTop_toBottomOf="@+id/recyclerview"
+        app:layout_constraintVertical_bias="0.053" />
     <Button
-        android:id="@+id/constraintlayout"
+        android:id="@+id/navigationdrawer"
         android:layout_width="280dp"
         android:layout_height="35dp"
-        android:text="ConstraintLayout"
-        android:textSize="12dp"
+        android:onClick="onClickShowNavigationDrawer"
+        android:text="Le Navigation Drawer"
         android:textAllCaps="false"
+        android:textSize="12dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearlayout"
-        app:layout_constraintVertical_bias="0.116" />
+        app:layout_constraintTop_toBottomOf="@+id/cardview"
+        app:layout_constraintVertical_bias="0.053" />
+
+    <Button
+        android:id="@+id/actionsbar"
+        android:layout_width="280dp"
+        android:layout_height="35dp"
+        android:onClick="onClickShowActionBar"
+        android:text="Une Action Bar"
+        android:textAllCaps="false"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/navigationdrawer"
+        app:layout_constraintVertical_bias="0.053" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -6,15 +6,15 @@ import android.os.Bundle;
 import android.widget.Toast;
 
 import fr.hudbert.bruno.cours.R;
-import fr.hudbert.bruno.cours.persistence.bo.User;
-import fr.hudbert.bruno.cours.persistence.dao.UserDao;
+import fr.hudbert.bruno.cours.common.bo.User;
+import fr.hudbert.bruno.cours.common.dao.UserDao;
 
 public class SaveInDatabase extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_save_in_database);
+        setContentView(R.layout.activity_persistence_save_in_database);
     }
 
     @Override
