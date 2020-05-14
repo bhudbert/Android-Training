@@ -41,19 +41,16 @@
         app:layout_constraintTop_toBottomOf="@+id/title"
         app:layout_constraintVertical_bias="0" />
 
-    <TextView
+    <androidx.recyclerview.widget.RecyclerView
 
-        android:id="@+id/subtitle"
-        android:layout_width="313dp"
-        android:layout_height="28dp"
-        android:fontFamily="sans-serif"
-        android:text="Choisissez une démo"
-        android:textAlignment="center"
-        android:textSize="16dp"
+        android:id="@+id/myrecyclerlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/attachedsubtitle"
-        app:layout_constraintVertical_bias="0.08" />
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -13,31 +13,33 @@
         android:layout_margin="10dp"
 
         />
-        <LinearLayout
 
-            android:id="@+id/sublayout"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_margin="10dp"
-            >
-            <TextView
+    <LinearLayout
 
-                android:id="@+id/labellistelement"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:text="label"
+        android:id="@+id/sublayout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp">
 
-               />
-            <TextView
+        <TextView
 
-            android:id="@+id/valuelistelement"
-            android:layout_width="match_parent"
+            android:id="@+id/labellistelement"
+            android:layout_width="75dp"
             android:layout_height="wrap_content"
-            android:text="value" android:layout_margin="10dp"
+            android:text="label"
 
             />
 
-        </LinearLayout>
+        <TextView
+
+            android:id="@+id/valuelistelement"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:text="value"
+
+            />
+
+    </LinearLayout>
 
 </LinearLayout>
